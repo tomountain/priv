@@ -20,16 +20,24 @@
 			<br>
 		</ol>
 		<div id="article">
+			<input type="text" onchange="alert('changed');">
+			<input type="button" value="night">
+			<script>
+				var body = document.querySelector('body');
+			</script>
+			<input type="button" value="night" onclick="
+				body.style.backgroundColor = 'black';
+				body.style.color = 'white';
+			">
+			<input type="button" value="day" onclick="
+				body.style.backgroundColor = 'white';
+				body.style.color = 'black';
+			">
 			<br>
 			<h2>WEB Index페이지 입니다.</h2>
 			Lorem ipsum dolor
 		</div>
 	</div>
-
-	<script>
-		document.querySelector('body').style.backgroundColor = 'black';
-		document.querySelector('body').style.color = 'white';
-	</script>
 </body>
 </html>
 </html>
