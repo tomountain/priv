@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <script>
+            
+        </script>
         <h1>WEB</h1>
         <div id="container">
     		<ol start="0">
@@ -30,9 +33,15 @@
                     document.querySelector('body').style.backgroundColor= 'white';
                     document.querySelector('body').style.color= 'black';
                     this.value = 'night';
+                    var i = 0;
+                    var arr = document.queryselectorAll('a');
+                    while (i < 5){
+                       arr[i].style.color = 'white';
+                       i = i + 1;
+                    }
                   }
                 ">
-                <input type ="button" value="night" onclick="
+                <!-- <input type ="button" value="night" onclick="
                     document.querySelector('body').style.backgroundColor= 'black';
                     document.querySelector('body').style.color= 'white';
                 //    document.querySelector('head').style.borderColor= 'white';
@@ -40,7 +49,7 @@
                 <input type ="button" value="day" onclick="
                 document.querySelector('body').style.backgroundColor= 'white';
                 document.querySelector('body').style.color= 'black';
-                ">
+                "> -->
                 <h2>Database</h2>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam veritatis culpa accusantium quod, distinctio eligendi soluta perspiciatis aut aspernatur quae molestias dicta quia tempore quibusdam mollitia quis. Incidunt, architecto.
                 <div id="disqus_thread"></div>
