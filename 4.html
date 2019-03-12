@@ -4,6 +4,7 @@
             <title>helloworld</title>
             <meta charset="utf-8">
             <link rel="stylesheet" href="style.css">
+            <script src="script.js"></script>
     </head>
     <body>
         <h1>Web</h1>
@@ -20,7 +21,16 @@
             <br>
 			<br>
         </ol>
-        <div id="article">
+        <div id="article">            
+            <input type ="button" value="night" onclick="
+            if(this.value === 'night'){
+              Color.toNight();
+              this.value = 'day';
+            } else {
+              Color.toDay();
+              this.value = 'night';
+            }
+          ">
             <br>
             <h2>Nodejs</h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsam veritatis culpa accusantium quod, distinctio eligendi soluta perspiciatis aut aspernatur quae molestias dicta quia tempore quibusdam mollitia quis. Incidunt, architecto.

@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h1> Object</h1>
+        <script>
+            var arr = ['egoing', 'duru', 'taeho'];
+            console.log(arr[0]);
+
+            var members = {
+                'developer':'egoing',
+                'account':'duru',
+                'designer':'leezche',
+                'printAllMember':function(){
+                    console.log(this.developer);
+                    console.log(this.account);
+                    console.log(this.designer);
+                }
+            }
+            console.log(members.printAllMember());
+
+            
+
+
+        </script>
+    </body>
+</html>

@@ -3,6 +3,7 @@
 		<title>helloworld</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
 </head>
 <body>
 	<h1>WEB</h1>
@@ -20,6 +21,15 @@
 			<br>
 		</ol>
 		<div id="article">
+			<input type ="button" value="night" onclick="
+				if(this.value === 'night'){
+				Color.toNight();
+				this.value = 'day';
+				} else {
+					Color.toDay();
+					this.value = 'night';
+				}
+			">		
 			<br>
 			<h2>JavaScript를 설명하고 있습니다.</h2>
 			Lorem ipsum dolor
