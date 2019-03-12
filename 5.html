@@ -29,16 +29,22 @@
                     document.querySelector('body').style.backgroundColor= 'black';
                     document.querySelector('body').style.color= 'white';
                     this.value = 'day';
+                    var arr = document.querySelectorAll('a');
+                    var i = 0;
+                    while (i < arr.length){
+                       arr[i].style.color = 'white';
+                       i = i + 1;
+                    }
                   }else{
                     document.querySelector('body').style.backgroundColor= 'white';
                     document.querySelector('body').style.color= 'black';
                     this.value = 'night';
+                    var arr = document.querySelectorAll('a');
                     var i = 0;
-                    var arr = document.queryselectorAll('a');
-                    while (i < 5){
-                       arr[i].style.color = 'white';
-                       i = i + 1;
-                    }
+                    while (i < arr.length){
+                       arr[i].style.color = 'black';
+                       i = i + 1;   
+                    }               
                   }
                 ">
                 <!-- <input type ="button" value="night" onclick="
