@@ -1,0 +1,36 @@
+#Drop the variables
+rm(list=ls())
+
+# Import Packages
+library(quantmod)
+
+# Set working directory
+setwd("C:/Users/Affinity/Desktop/00_그룹IT신기술사관학교_실습파일/Pro_3차수_통계분석실습")
+
+# Data import obs - observations
+mydat =read.csv("corporate_finance_demo.csv", header=T)
+
+# Data check
+head(mydat)
+tail(mydat,3)
+str(mydat)
+
+#colnames(mydat)
+mydat[,c("AT")] > 70 #값을 TRUE, FALSE로 던져준다
+mydat[,c("SALE")] > 10000
+newdat = mydat[(mydat[,c("AT")] > 70)  || (mydat[,c("SALE")] > 10000) ,c("AT","SALE")]
+head(newdat)
+
+
+mydat$newvar1 = mydat$AT * mydat$SALE
+head(mydat)
+
+
+#merge
+head(mydat)
+mydat_A = mydat[,c("GVKEY", "AT")]
+mydat_B = mydat[,c("GVKEY", "SALE")]
+
+mydat_C = merge(mydat_A,mydat_B, by=c("GVKEY"))
+head(mydat_C)
+mean(mydat[mydat$STATE == 'IL', c("SALE")])
