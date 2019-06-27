@@ -90,3 +90,5 @@ model.nnet <- nnet(y~., data = trainData_bal, size = 4, decay = 5e-04)
 testPred_bal <- predict(model.nnet, newdata = testData, type = "class")
 table(testData$y, testPred_bal)
 confusionMatrix(as.factor(testPred_bal), testData$y, positive = "yes", mode = "prec_recall")
+
+
